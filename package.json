@@ -1,0 +1,19 @@
+{
+  "name": "biotope-commander",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/janrembold/biotope-commander.git",
+  "author": "Jan Rembold <jan.rembold@virtual-identity.com>",
+  "license": "MIT",
+  "dependencies": {
+    "biotope-build-webpack": "https://github.com/janrembold/biotope-build-webpack.git#master",
+    "commander": "^2.15.1",
+    "console-emoji": "^0.0.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "biotope": "./index.js"
+  }
+}

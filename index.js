@@ -23,3 +23,21 @@ for(let sequence of sequences['build']) {
     // TODO add local config here
     package.init({});
 }
+
+
+// TODO move to repo: biotope-build-connect-livereload
+const connect  = require('connect');
+const serveStatic = require('serve-static');
+const connectLivereload = require('connect-livereload');
+const server = connect();
+
+server.use(connectLivereload({ port: 35729 }));
+server.use(serveStatic(__dirname + '/livereload'));
+
+server.listen(3000);
+
+const livereload = require('livereload');
+const reloadServer = livereload.createServer({
+    port: 35729
+});
+reloadServer.watch(__dirname + '/livereload');

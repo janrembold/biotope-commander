@@ -8,7 +8,11 @@
   "dependencies": {
     "biotope-build-webpack": "https://github.com/janrembold/biotope-build-webpack.git#master",
     "commander": "^2.15.1",
-    "console-emoji": "^0.0.2"
+    "connect": "^3.6.6",
+    "connect-livereload": "^0.6.0",
+    "console-emoji": "^0.0.2",
+    "livereload": "^0.7.0",
+    "serve-static": "^1.13.2"
   },
   "scripts": {
     "start": "node index.js"
